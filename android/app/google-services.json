@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "141655814654",
+    "project_id": "foodly-project",
+    "storage_bucket": "foodly-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141655814654:android:3f10150a209f05b9d550af",
+        "android_client_info": {
+          "package_name": "com.dbestech.restaurant_foodly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141655814654-3qemfcqk14d2spksa32c0qirvgrisbec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNRoEV30Cn0Sjm9DMAKkWVKdKwZRPrb08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141655814654-3qemfcqk14d2spksa32c0qirvgrisbec.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "141655814654-k5cl25n84a22nmqi3pdh38rt59i9f3qi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.foodly"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141655814654:android:f2b6b3076cb5c5bbd550af",
+        "android_client_info": {
+          "package_name": "com.example.foodly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141655814654-3qemfcqk14d2spksa32c0qirvgrisbec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNRoEV30Cn0Sjm9DMAKkWVKdKwZRPrb08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141655814654-3qemfcqk14d2spksa32c0qirvgrisbec.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "141655814654-k5cl25n84a22nmqi3pdh38rt59i9f3qi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.foodly"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141655814654:android:e56428a756c6ddccd550af",
+        "android_client_info": {
+          "package_name": "com.example.restaurante"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141655814654-3qemfcqk14d2spksa32c0qirvgrisbec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNRoEV30Cn0Sjm9DMAKkWVKdKwZRPrb08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141655814654-3qemfcqk14d2spksa32c0qirvgrisbec.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "141655814654-k5cl25n84a22nmqi3pdh38rt59i9f3qi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.foodly"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
