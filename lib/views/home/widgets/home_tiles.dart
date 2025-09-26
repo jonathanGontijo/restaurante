@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:restaurante/common/home_tile.dart';
 import 'package:restaurante/constants/constants.dart';
+import 'package:restaurante/views/food/food_list.dart';
 
 class HomeTiles extends StatelessWidget {
-  const HomeTiles({
-    super.key,
-  });
+  const HomeTiles({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class HomeTiles extends StatelessWidget {
         borderRadius: BorderRadius.circular(10.r),
       ),
       child: Padding(
-        padding:  EdgeInsets.only(top: 8.h),
+        padding: EdgeInsets.only(top: 8.h),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -36,7 +36,12 @@ class HomeTiles extends StatelessWidget {
             HomeTile(
               text: "Foods",
               iconPath: "assets/icons/french_fries.svg",
-              onTap: () {},
+              onTap: () {
+                Get.to(() => const FoodList(),
+                transition: Transition.fadeIn,
+                duration: const Duration(milliseconds: 900),
+                 );
+              },
             ),
             HomeTile(
               text: "Self Deliveries",
