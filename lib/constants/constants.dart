@@ -22,3 +22,13 @@ double height = 926.h;
 double width = 428.w;
 
 const String appBaseUrl = "";
+
+List<String> orderList = [
+  'New Order',
+  'Preparing',
+  'Ready',
+  'Picked Up',
+  'Self Delivery',
+  'Delivered',
+  'Cancelled',
+];
