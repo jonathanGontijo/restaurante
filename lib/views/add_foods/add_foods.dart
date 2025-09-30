@@ -4,6 +4,7 @@ import 'package:restaurante/common/background_container.dart';
 import 'package:restaurante/common/reusable_text.dart';
 import 'package:restaurante/constants/constants.dart';
 import 'package:restaurante/views/add_foods/widgets/all_categories.dart';
+import 'package:restaurante/views/add_foods/widgets/image_uploads.dart';
 
 class AddFoods extends StatefulWidget {
   const AddFoods({super.key});
@@ -57,6 +58,7 @@ class _AddFoodsState extends State<AddFoods> {
                       );
                     },
                   ),
+                  ImageUploads(),
                 ],
               ),
             ),
