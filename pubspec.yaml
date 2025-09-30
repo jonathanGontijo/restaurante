@@ -38,6 +38,7 @@ dependencies:
   flutter_vector_icons: ^2.0.0
   cached_network_image: ^3.3.0
   flutter_svg: ^2.0.9
+  flutter_hooks: ^0.20.3
   firebase_auth: ^4.6.3
   firebase_core: ^2.13.0
   google_fonts: ^6.1.0

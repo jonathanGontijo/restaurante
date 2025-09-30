@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:restaurante/common/home_tile.dart';
 import 'package:restaurante/constants/constants.dart';
+import 'package:restaurante/views/add_foods/add_foods.dart';
 import 'package:restaurante/views/food/food_list.dart';
 
 class HomeTiles extends StatelessWidget {
@@ -26,7 +27,13 @@ class HomeTiles extends StatelessWidget {
             HomeTile(
               text: "Add Foods",
               iconPath: "assets/icons/taco.svg",
-              onTap: () {},
+              onTap: () {
+                Get.to(
+                  () => const AddFoods(),
+                  transition: Transition.fadeIn,
+                  duration: const Duration(milliseconds: 900),
+                );
+              },
             ),
             HomeTile(
               text: "Wallet",
@@ -37,10 +44,11 @@ class HomeTiles extends StatelessWidget {
               text: "Foods",
               iconPath: "assets/icons/french_fries.svg",
               onTap: () {
-                Get.to(() => const FoodList(),
-                transition: Transition.fadeIn,
-                duration: const Duration(milliseconds: 900),
-                 );
+                Get.to(
+                  () => const FoodList(),
+                  transition: Transition.fadeIn,
+                  duration: const Duration(milliseconds: 900),
+                );
               },
             ),
             HomeTile(
