@@ -58,7 +58,28 @@ class _AddFoodsState extends State<AddFoods> {
                       );
                     },
                   ),
-                  ImageUploads(),
+                  ImageUploads(
+                    back: () {
+                      _pageController.previousPage(
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn,
+                      );
+                    },
+                    next: () {
+                      _pageController.nextPage(
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn,
+                      );
+                    },
+                  ),
+                  ChooseCategory(
+                    next: () {
+                      _pageController.nextPage(
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn,
+                      );
+                    },
+                  ),
                 ],
               ),
             ),

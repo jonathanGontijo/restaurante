@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:restaurante/common/app_style.dart';
+import 'package:restaurante/common/custom_button.dart';
 import 'package:restaurante/common/reusable_text.dart';
 import 'package:restaurante/constants/constants.dart';
 
 class ImageUploads extends StatelessWidget {
-  const ImageUploads({super.key});
+  const ImageUploads({super.key, required this.back, required this.next});
+
+  final Function back;
+  final Function next;
 
   @override
   Widget build(BuildContext context) {
@@ -100,6 +104,28 @@ class ImageUploads extends StatelessWidget {
                             style: appStyle(16, kDark, FontWeight.w600),
                           ),
                         ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 25.h),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      CustomButton(
+                        text: 'Back',
+                        btnWidth: width / 2.5,
+                        btnRadius: 9,
+                        onTap: () {
+                          back();
+                        },
+                      ),
+                      CustomButton(
+                        text: 'next',
+                        btnWidth: width / 2.5,
+                        btnRadius: 9,
+                        onTap: () {
+                          next();
+                        },
                       ),
                     ],
                   ),
