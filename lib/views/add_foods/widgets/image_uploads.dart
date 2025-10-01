@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:restaurante/common/app_style.dart';
 import 'package:restaurante/common/custom_button.dart';
 import 'package:restaurante/common/reusable_text.dart';
 import 'package:restaurante/constants/constants.dart';
+import 'package:restaurante/controllers/uploader_controller.dart';
 
 class ImageUploads extends StatelessWidget {
   const ImageUploads({super.key, required this.back, required this.next});
@@ -13,6 +15,7 @@ class ImageUploads extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(UploaderController());
     return SizedBox(
       height: height,
       child: ListView(
@@ -43,17 +46,22 @@ class ImageUploads extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        height: 120.h,
-                        width: width / 2.3,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12.r),
-                          border: Border.all(color: kGrayLight),
-                        ),
-                        child: Center(
-                          child: ReusableText(
-                            text: 'Upload Image',
-                            style: appStyle(16, kDark, FontWeight.w600),
+                      GestureDetector(
+                        onTap: () {
+                          controller.pickImage('one');
+                        },
+                        child: Container(
+                          height: 120.h,
+                          width: width / 2.3,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12.r),
+                            border: Border.all(color: kGrayLight),
+                          ),
+                          child: Center(
+                            child: ReusableText(
+                              text: 'Upload Image',
+                              style: appStyle(16, kDark, FontWeight.w600),
+                            ),
                           ),
                         ),
                       ),
