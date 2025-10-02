@@ -46,36 +46,72 @@ class ImageUploads extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      //Image One
                       GestureDetector(
                         onTap: () {
                           controller.pickImage('one');
                         },
-                        child: Container(
-                          height: 120.h,
-                          width: width / 2.3,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12.r),
-                            border: Border.all(color: kGrayLight),
-                          ),
-                          child: Center(
-                            child: ReusableText(
-                              text: 'Upload Image',
-                              style: appStyle(16, kDark, FontWeight.w600),
+                        child: Obx(
+                          () => Container(
+                            height: 120.h,
+                            width: width / 2.3,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12.r),
+                              border: Border.all(color: kGrayLight),
                             ),
+                            child: controller.imageOneUrl == ''
+                                ? Center(
+                                    child: ReusableText(
+                                      text: 'Upload Image',
+                                      style: appStyle(
+                                        16,
+                                        kDark,
+                                        FontWeight.w600,
+                                      ),
+                                    ),
+                                  )
+                                : ClipRRect(
+                                    borderRadius: BorderRadius.circular(12.r),
+                                    child: Image.network(
+                                      controller.imageOneUrl,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                           ),
                         ),
                       ),
-                      Container(
-                        height: 120.h,
-                        width: width / 2.3,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12.r),
-                          border: Border.all(color: kGrayLight),
-                        ),
-                        child: Center(
-                          child: ReusableText(
-                            text: 'Upload Image',
-                            style: appStyle(16, kDark, FontWeight.w600),
+
+                      //Image Two
+                      GestureDetector(
+                        onTap: () {
+                          controller.pickImage('two');
+                        },
+                        child: Obx(
+                          () => Container(
+                            height: 120.h,
+                            width: width / 2.3,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12.r),
+                              border: Border.all(color: kGrayLight),
+                            ),
+                            child: controller.imageTwoUrl == ''
+                                ? Center(
+                                    child: ReusableText(
+                                      text: 'Upload Image',
+                                      style: appStyle(
+                                        16,
+                                        kDark,
+                                        FontWeight.w600,
+                                      ),
+                                    ),
+                                  )
+                                : ClipRRect(
+                                    borderRadius: BorderRadius.circular(12.r),
+                                    child: Image.network(
+                                      controller.imageTwoUrl,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                           ),
                         ),
                       ),
@@ -85,31 +121,72 @@ class ImageUploads extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        height: 120.h,
-                        width: width / 2.3,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12.r),
-                          border: Border.all(color: kGrayLight),
-                        ),
-                        child: Center(
-                          child: ReusableText(
-                            text: 'Upload Image',
-                            style: appStyle(16, kDark, FontWeight.w600),
+                      //Image Three
+                      GestureDetector(
+                        onTap: () {
+                          controller.pickImage('three');
+                        },
+                        child: Obx(
+                          () => Container(
+                            height: 120.h,
+                            width: width / 2.3,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12.r),
+                              border: Border.all(color: kGrayLight),
+                            ),
+                            child: controller.imageThreeUrl == ''
+                                ? Center(
+                                    child: ReusableText(
+                                      text: 'Upload Image',
+                                      style: appStyle(
+                                        16,
+                                        kDark,
+                                        FontWeight.w600,
+                                      ),
+                                    ),
+                                  )
+                                : ClipRRect(
+                                    borderRadius: BorderRadius.circular(12.r),
+                                    child: Image.network(
+                                      controller.imageThreeUrl,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                           ),
                         ),
                       ),
-                      Container(
-                        height: 120.h,
-                        width: width / 2.3,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12.r),
-                          border: Border.all(color: kGrayLight),
-                        ),
-                        child: Center(
-                          child: ReusableText(
-                            text: 'Upload Image',
-                            style: appStyle(16, kDark, FontWeight.w600),
+
+                      //Image Four
+                      GestureDetector(
+                        onTap: () {
+                          controller.pickImage('four');
+                        },
+                        child: Obx(
+                          () => Container(
+                            height: 120.h,
+                            width: width / 2.3,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12.r),
+                              border: Border.all(color: kGrayLight),
+                            ),
+                            child: controller.imageFourUrl == ''
+                                ? Center(
+                                    child: ReusableText(
+                                      text: 'Upload Image',
+                                      style: appStyle(
+                                        16,
+                                        kDark,
+                                        FontWeight.w600,
+                                      ),
+                                    ),
+                                  )
+                                : ClipRRect(
+                                    borderRadius: BorderRadius.circular(12.r),
+                                    child: Image.network(
+                                      controller.imageFourUrl,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                           ),
                         ),
                       ),
